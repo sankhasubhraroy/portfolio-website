@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 .menu {
-    padding: 1em;
-    background-color: #fff;
-    position: relative;
-    width: calc(130px + 4 * 70px + 4rem);
+    /* background-color: transparent; */
+    /* background-color: slategrey; */
+    width: calc(4 * 70px + 4rem);
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-radius: 20px 20px;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.075);
+    margin: auto;
+    padding: 1em;
 }
 
 .link {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 70px;
-    height: 40px;
-    border-radius: 99em;
+    height: 38px;
+    /* border-radius: 99em; */
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -32,7 +30,7 @@
     z-index: -1;
     content: "";
     display: block;
-    border-radius: 99em;
+    /* border-radius: 99em; */
     width: 100%;
     height: 100%;
     top: 0;
@@ -45,7 +43,7 @@
 .link:hover,
 .link:focus {
     outline: 0;
-    width: 130px;
+    width: 100px;
 }
 
 .link:hover:before,
@@ -61,13 +59,15 @@
     height: 28px;
     display: block;
     flex-shrink: 0;
-    left: 18px;
+    left: 14px;
     position: absolute;
+    text-align: center;
 }
 
 .link-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
 }
 
 .link-title {
@@ -76,6 +76,7 @@
     transform-origin: center right;
     display: block;
     text-align: center;
-    text-indent: 28px;
+    text-indent: 38px;
     width: 100%;
+    font-size: small;
 }
