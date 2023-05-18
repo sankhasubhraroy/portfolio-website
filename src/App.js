@@ -8,8 +8,8 @@ function App() {
   return (
     // <Navbar />
     // <Menu />
-    <PhotoFrame />
-    // <SocialTab />
+    // <PhotoFrame />
+    <SocialTab />
   );
 }
 
