@@ -1,0 +1,29 @@
+.hero {
+    margin: 7em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    width: 50%;
+}
+
+.social-tab {
+    margin: auto;
+    margin-top: 38px;
+}
+
+/* @media screen and (max-width:676px) {
+    .hero {
+        flex-direction: column;
+        margin: 3em;
+    }
+
+    .left .frame {
+        margin: auto;
+    }
+
+    .right {
+        width: 100%;
+    }
+} */
