@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+.intro {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.intro h1 {
+    color: #85d;
+}
+
+.intro h2 {
+    color: #35d413;
+}
+
+.attachment {
+    width: calc(2 * 90px + 1em);
+    display: flex;
+    justify-content: space-between;
+}
+
+.attachment a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 11px 13px;
+    border-radius: 7px;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 0.6s cubic-bezier(.79, .21, .06, .81);
+}
+
+.attachment a:hover {
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
