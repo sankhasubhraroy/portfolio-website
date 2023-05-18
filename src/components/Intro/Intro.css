@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 
 .intro {
@@ -5,14 +6,28 @@
 }
 
 .intro p {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .intro h1 {
     color: #85d;
+    font-size: 42px;
+    font-weight: 700;
 }
 
 .intro h2 {
+    color: #35d413;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.intro .description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro .description span {
     color: #35d413;
 }
 
@@ -25,6 +40,8 @@
 .attachment a {
     display: block;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
     color: inherit;
     padding: 11px 13px;
     border-radius: 7px;
