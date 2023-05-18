@@ -7,8 +7,8 @@ import SocialTab from './components/SocialTab/SocialTab';
 function App() {
   return (
     // <Navbar />
-    <Menu />
-    // <PhotoFrame />
+    // <Menu />
+    <PhotoFrame />
     // <SocialTab />
   );
 }
