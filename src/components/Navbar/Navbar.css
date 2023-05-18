@@ -1,94 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 
 .navbar {
-    /* display: flex; */
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.075); */
 }
 
-/* .color-mode {
-    width: 28px;
-} */
-.theme {
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 14px;
-    right: 22px;
+.logo-text {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 20px;
 }
 
-.color-mode svg {
-    width: 100%;
-    height: 100%;
+.theme-toggle {
+    width: 34px;
+    height: 34px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 8px 8px 10px #cccccc,
+        inset -8px -8px 10px #f4f4f4;
+    transition: box-shadow 0.6s cubic-bezier(0, 1.71, .34, .59);
 }
 
-.menu-toggle {
-    display: none;
-}
-
-.menu-toggle-button {
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    text-align: center;
-    line-height: 80px;
-    transform: translate3d(0, 0, 0);
-    transition: transform ease-out 200ms;
-}
-
-
-
-.hamburger {
-    width: 25px;
-    height: 3px;
-    background: #000;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -12.5px;
-    margin-top: -1.5px;
-    transition: transform 200ms;
-}
-
-.hamburger-1 {
-    transform: translate3d(0, -8px, 0);
-}
-
-.hamburger-2 {
-    transform: translate3d(0, 0, 0);
-}
-
-.hamburger-3 {
-    transform: translate3d(0, 8px, 0);
-}
-
-.menu-toggle:checked+.menu-toggle-button .hamburger-1 {
-    transform: translate3d(0, 0, 0) rotate(45deg);
-}
-
-.menu-toggle:checked+.menu-toggle-button .hamburger-2 {
-    transform: translate3d(0, 0, 0) scale(0.1, 1);
-}
-
-.menu-toggle:checked+.menu-toggle-button .hamburger-3 {
-    transform: translate3d(0, 0, 0) rotate(-45deg);
-}
-
-.menu-toggle-button {
-    z-index: 2;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-duration: 400ms;
-    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+.theme-toggle:hover,
+.theme-toggle:active {
     cursor: pointer;
+    box-shadow: 8px 8px 10px #cccccc,
+        -8px -8px 10px #f4f4f4;
 }
 
-.menu-toggle-button:hover {
-    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-}
-
-.menu-toggle:checked+.menu-toggle-button {
-    transition-timing-function: linear;
-    transition-duration: 200ms;
+.theme-toggle span {
+    width: 24px;
+    height: 24px;
 }
