@@ -22,7 +22,7 @@
 .btn {
     height: 34px;
     width: 34px;
-    border-radius: 3px;
+    border-radius: 5px;
     background: #e0e5ec;
     display: flex;
     flex-direction: column;

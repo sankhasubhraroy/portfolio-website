@@ -9,9 +9,9 @@ import Home from './pages/Home/Home';
 function App() {
   return (
     // <Navbar />
-    <Menu />
+    // <Menu />
     // <PhotoFrame />
-    // <SocialTab />
+    <SocialTab />
     // <Intro />
     // <Home />
   );
