@@ -1,21 +1,29 @@
 .menu {
-    /* background-color: transparent; */
-    /* background-color: slategrey; */
-    width: calc(4 * 70px + 4rem);
+    background-color: #e0e5ec;
+    position: relative;
+    height: 60px;
+    width: calc(5 * 70px + 5rem);
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: auto;
-    padding: 1em;
+    align-items: center;
+    border-radius: 99em;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
 }
 
 .link {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 70px;
-    height: 38px;
-    /* border-radius: 99em; */
+    height: 44px;
+    border-radius: 99em;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -30,20 +38,24 @@
     z-index: -1;
     content: "";
     display: block;
-    /* border-radius: 99em; */
+    border-radius: 99em;
     width: 100%;
     height: 100%;
     top: 0;
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 0.2s ease-in;
     transform-origin: center right;
-    background-color: #eee;
+    background-color: #e0e5ec;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
 
 .link:hover,
 .link:focus {
     outline: 0;
-    width: 100px;
+    width: 120px;
 }
 
 .link:hover:before,
@@ -55,19 +67,17 @@
 }
 
 .link-icon {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     display: block;
     flex-shrink: 0;
-    left: 14px;
+    left: 18px;
     position: absolute;
-    text-align: center;
 }
 
 .link-icon svg {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
+    width: 24px;
+    height: 24px;
 }
 
 .link-title {
@@ -76,7 +86,6 @@
     transform-origin: center right;
     display: block;
     text-align: center;
-    text-indent: 38px;
+    text-indent: 28px;
     width: 100%;
-    font-size: small;
 }
