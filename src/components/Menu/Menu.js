@@ -1,39 +1,45 @@
 import React from 'react'
 import './Menu.css'
+import MenuItem from '../MenuItem/MenuItem'
 
 export default function Menu() {
     return (
         <div className="menu">
-            <a href="#" className="link">
-                <span className="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M220 876h150V626h220v250h150V486L480 291 220 486v390Zm-60 60V456l320-240 320 240v480H530V686H430v250H160Zm320-353Z" /></svg>
-                </span>
-                <span className="link-title">Home</span>
-            </a>
-            <a href="#" className="link">
-                <span className="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M356 936H180q-24 0-42-18t-18-42V700q44-5 75.5-34.5T227 593q0-43-31.5-72.5T120 486V310q0-24 18-42t42-18h177q11-40 39.5-67t68.5-27q40 0 68.5 27t39.5 67h173q24 0 42 18t18 42v173q40 11 65.5 41.5T897 595q0 40-25.5 67T806 700v176q0 24-18 42t-42 18H570q-5-48-35.5-77.5T463 829q-41 0-71.5 29.5T356 936Zm-176-60h130q25-61 69.888-84 44.888-23 83-23T546 792q45 23 70 84h130V641h45q20 0 33-13t13-33q0-20-13-33t-33-13h-45V310H511v-48q0-20-13-33t-33-13q-20 0-33 13t-13 33v48H180v130q48.15 17.817 77.575 59.686Q287 541.555 287 593.223 287 644 257.5 686T180 746v130Zm329-330Z" /></svg>
-                </span>
-                <span className="link-title">Projects</span>
-            </a>
-            <a href="#" className="link">
-                <span className="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m379 713 44-44-93-93 92-92-44-44-136 136 137 137Zm202 0 137-137-137-137-44 44 93 93-93 93 44 44ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600V276H180v600Zm0-600v600-600Z" /></svg>
-                </span>
-                <span className="link-title">Skills</span>
-            </a>
-            <a href="#" className="link">
-                <span className="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M144 1016v-60h672v60H144Zm0-820v-60h672v60H144Zm336 416q50 0 84-34t34-84q0-50-34-84t-84-34q-50 0-84 34t-34 84q0 50 34 84t84 34ZM132 896q-24 0-42-18t-18-42V316q0-26 18-43t42-17h696q24 0 42 18t18 42v520q0 24-18 42t-42 18H132Zm88-60q51-63 121-94.5T479.5 710q68.5 0 140 31.5T740 836h88V316H132v520h88Zm94 0h334q-31-30-72.5-48T480 770q-54 0-94.5 18T314 836Zm166.158-284Q456 552 439.5 535T423 494q0-24 16.342-41t40.5-17Q504 436 520.5 453t16.5 41q0 24-16.342 41t-40.5 17ZM480 576Z" /></svg>
-                </span>
-                <span className="link-title">Contact</span>
-            </a>
-            <a href="#" className="link">
-                <span className="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M144 1016v-60h672v60H144Zm0-820v-60h672v60H144Zm336 416q50 0 84-34t34-84q0-50-34-84t-84-34q-50 0-84 34t-34 84q0 50 34 84t84 34ZM132 896q-24 0-42-18t-18-42V316q0-26 18-43t42-17h696q24 0 42 18t18 42v520q0 24-18 42t-42 18H132Zm88-60q51-63 121-94.5T479.5 710q68.5 0 140 31.5T740 836h88V316H132v520h88Zm94 0h334q-31-30-72.5-48T480 770q-54 0-94.5 18T314 836Zm166.158-284Q456 552 439.5 535T423 494q0-24 16.342-41t40.5-17Q504 436 520.5 453t16.5 41q0 24-16.342 41t-40.5 17ZM480 576Z" /></svg>
-                </span>
-                <span className="link-title">Contact</span>
-            </a>
+
+            <MenuItem
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M160 936V456l320-240 320 240v480H560V656H400v280H160Z" fill='#32de84' /></svg>}
+
+                linkTitle='Home'
+                titleColor='#32de84'
+            />
+
+            <MenuItem
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M354 936H180q-24 0-42-18.5T120 873V697q44-5 75.5-34.5T227 590q0-43-31.5-72.5T120 483V307q0-23 18-41.5t42-18.5h176q11-40 38-65.5t67-25.5q39 0 70 25.5t42 65.5h176q23 0 41.5 18.5T809 307v176q40 11 65.5 42t25.5 70q0 40-25.5 67T809 700v176q0 24-18.5 42T749 936H575q-5-48-38-77.5T461 829q-38 0-70 29.5T354 936Z" fill='#fd5c63' /></svg>}
+
+                linkTitle='Projects'
+                titleColor='#fd5c63'
+            />
+
+            <MenuItem
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m379 713 44-44-93-93 92-92-44-44-136 136 137 137Zm202 0 137-137-137-137-44 44 93 93-93 93 44 44ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Z" fill='#1da1f2' /></svg>}
+
+                linkTitle='Skills'
+                titleColor='#1da1f2'
+            />
+
+            <MenuItem
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z" fill='#FF033E' /></svg>}
+
+                linkTitle='Services'
+                titleColor='#FF033E'
+            />
+
+            <MenuItem
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 656q33 0 56.5-23.5T560 576q0-33-23.5-56.5T480 496q-33 0-56.5 23.5T400 576q0 33 23.5 56.5T480 656ZM320 816h320v-23q0-24-13-44t-36-30q-26-11-53.5-17t-57.5-6q-30 0-57.5 6T369 719q-23 10-36 30t-13 44v23Zm420 160H220q-24 0-42-18t-18-42V236q0-24 18-42t42-18h341l239 239v501q0 24-18 42t-42 18Z" fill='#333' /></svg>}
+
+                linkTitle='Contact'
+                titleColor='#333'
+            />
         </div>
     )
 }
