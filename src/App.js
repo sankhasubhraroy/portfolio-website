@@ -5,15 +5,19 @@ import PhotoFrame from './components/PhotoFrame/PhotoFrame';
 import SocialTab from './components/SocialTab/SocialTab';
 import Intro from './components/Intro/Intro';
 import Home from './pages/Home/Home';
+import MenuItem from './components/MenuItem/MenuItem';
 
 function App() {
   return (
-    // <Navbar />
-    // <Menu />
-    // <PhotoFrame />
-    // <SocialTab />
-    // <Intro />
-    <Home />
+    <>
+      {/* <Navbar /> */}
+      {/* <MenuItem /> */}
+      {/* <PhotoFrame /> */}
+      {/* <SocialTab /> */}
+      {/* <Intro /> */}
+      <Home />
+      {/* <Menu /> */}
+    </>
   );
 }
 

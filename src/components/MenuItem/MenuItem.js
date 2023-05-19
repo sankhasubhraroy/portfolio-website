@@ -17,7 +17,7 @@ export default function MenuItem(props) {
 }
 
 MenuItem.propTypes = {
-    titleColor: PropTypes.string.isRequired,
     svg: PropTypes.object.isRequired,
-    linkTitle: PropTypes.string.isRequired
+    linkTitle: PropTypes.string.isRequired,
+    titleColor: PropTypes.string.isRequired
 }
