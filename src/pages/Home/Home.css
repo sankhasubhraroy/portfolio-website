@@ -1,5 +1,5 @@
 .hero {
-    margin: 7em;
+    margin: 3em 7em 7em;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -16,7 +16,7 @@
 
 @media screen and (max-width:1347px) and (min-width:1023px) {
     .hero {
-        margin: 7em 4em;
+        margin: 3em 4em 7em;
     }
 
     .right {
@@ -27,7 +27,7 @@
 @media screen and (max-width:1023px) {
     .hero {
         flex-direction: column;
-        margin: 5em;
+        margin: 5em 5em 7em;
         width: fit-content;
     }
 
@@ -47,11 +47,11 @@
 
 @media screen and (max-width:767px) {
     .hero {
-        margin: 3em;
+        margin: 3em 3em 7em;
     }
 }
 
-@media screen and (max-width:537px) {
+@media screen and (max-width:567px) {
     .left .frame {
         margin: auto;
         width: 280px;
@@ -78,7 +78,7 @@
 
 @media screen and (max-width:373px) {
     .hero {
-        margin: 2em;
+        margin: 2em 2em 5em;
     }
 
     .left .frame {

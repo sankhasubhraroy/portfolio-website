@@ -5,7 +5,7 @@
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.intro p {
+.intro .hello {
     color: #333;
     font-size: 22px;
     font-weight: 700;
@@ -28,6 +28,7 @@
 .intro .description {
     font-size: 18px;
     font-weight: 400;
+    color: #333;
 }
 
 .intro .description span {
@@ -55,4 +56,15 @@
 
 .attachment a:hover {
     box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+@media screen and (max-width:1023px) {
+    .intro .hello {
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
+
+    .intro h1 {
+        margin-top: 1rem;
+    }
 }

@@ -7,10 +7,10 @@ export default function Menu() {
         <div className="menu">
 
             <MenuItem
-                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M160 936V456l320-240 320 240v480H560V656H400v280H160Z" fill='#32de84' /></svg>}
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M160 936V456l320-240 320 240v480H560V656H400v280H160Z" fill='#4CBB17' /></svg>}
 
                 linkTitle='Home'
-                titleColor='#32de84'
+                titleColor='#4CBB17'
             />
 
             <MenuItem
@@ -21,10 +21,10 @@ export default function Menu() {
             />
 
             <MenuItem
-                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m379 713 44-44-93-93 92-92-44-44-136 136 137 137Zm202 0 137-137-137-137-44 44 93 93-93 93 44 44ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Z" fill='#1da1f2' /></svg>}
+                svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m379 713 44-44-93-93 92-92-44-44-136 136 137 137Zm202 0 137-137-137-137-44 44 93 93-93 93 44 44ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Z" fill='#6050DC' /></svg>}
 
                 linkTitle='Skills'
-                titleColor='#1da1f2'
+                titleColor='#6050DC'
             />
 
             <MenuItem

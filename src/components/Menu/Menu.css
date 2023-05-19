@@ -1,7 +1,10 @@
 .menu {
     background-color: #e0e5ec;
-    position: relative;
     height: 60px;
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: calc(5 * 70px + 5rem);
     display: flex;
     justify-content: center;
@@ -15,4 +18,38 @@
         inset 0px 0px 0px 0px #fff9,
         inset 0px 0px 0px 0px #0001,
         inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+}
+
+@media screen and (max-width:567px) {
+    .menu {
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:373px) {
+
+    .menu .link .link-icon,
+    .menu .link .link-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .menu .link .link-title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .menu .link .link-icon,
+    .menu .link .link-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .menu .link .link-title {
+        font-size: 10px;
+    }
 }

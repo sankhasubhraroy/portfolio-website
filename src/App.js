@@ -10,13 +10,13 @@ import MenuItem from './components/MenuItem/MenuItem';
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       <Home />
-      {/* <Menu /> */}
+      <Menu />
     </>
   );
 }

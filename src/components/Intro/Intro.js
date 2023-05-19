@@ -16,7 +16,7 @@ export default function Intro(props) {
 
     return (
         <div className='intro'>
-            <p>Hello,</p>
+            <p className='hello'>Hello,</p>
             <h1>I'm Sankhasubhra Roy</h1>
             <h2>{props.designation[count % props.designation.length]}</h2>
             <p className='description'>I'm a passionate and dedicated full stack developer with a strong foundation in computer science. I have always been fascinated by the intricate world of software development. I have hands-on experience in several technologies, including <span>Java</span>, <span>Node.js</span>, <span>React</span>, <span>MySQL</span>, and <span>MongoDB</span>.</p>

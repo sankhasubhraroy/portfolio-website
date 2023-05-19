@@ -43,6 +43,7 @@
     text-decoration: none;
 }
 
+.btn:hover,
 .btn:active {
     box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
         -4px -4px 6px 0 rgba(116, 125, 136, .2),
