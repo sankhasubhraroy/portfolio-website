@@ -8,12 +8,12 @@ import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <Navbar />
+    // <Navbar />
     // <Menu />
     // <PhotoFrame />
     // <SocialTab />
     // <Intro />
-    // <Home />
+    <Home />
   );
 }
 

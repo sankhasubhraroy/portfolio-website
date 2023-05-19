@@ -2,6 +2,7 @@
     margin: 7em;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .right {
@@ -13,17 +14,107 @@
     margin-top: 38px;
 }
 
-/* @media screen and (max-width:676px) {
+@media screen and (max-width:1347px) and (min-width:1023px) {
+    .hero {
+        margin: 7em 4em;
+    }
+
+    .right {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width:1023px) {
     .hero {
         flex-direction: column;
-        margin: 3em;
+        margin: 5em;
+        width: fit-content;
     }
 
     .left .frame {
         margin: auto;
     }
 
+    .left {
+        width: fit-content;
+        margin: auto;
+    }
+
     .right {
         width: 100%;
     }
-} */
+}
+
+@media screen and (max-width:767px) {
+    .hero {
+        margin: 3em;
+    }
+}
+
+@media screen and (max-width:537px) {
+    .left .frame {
+        margin: auto;
+        width: 280px;
+        height: 280px;
+    }
+
+    .left .social-tab {
+        margin-top: 26px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .left .frame {
+        width: 260px;
+        height: 260px;
+    }
+
+    .left .social-tab {
+        width: 100%;
+        height: 50px;
+        margin-top: 23px;
+    }
+}
+
+@media screen and (max-width:373px) {
+    .hero {
+        margin: 2em;
+    }
+
+    .left .frame {
+        width: 180px;
+        height: 180px;
+    }
+
+    .right .intro h1 {
+        font-size: 22px;
+    }
+
+    .right .intro h2 {
+        font-size: 22px;
+    }
+
+    .left .social-tab {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid: auto-flow / 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 17px;
+    }
+
+    .left .social-tab .btn {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .left .frame {
+        width: 120px;
+        height: 120px;
+    }
+
+    .left .social-tab {
+        margin-top: 10px;
+    }
+}
