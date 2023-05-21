@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
     const githubColor = { color: props.githubColor }
 
     return (
-        <div className="card">
+        <div className="project-card">
             <span></span>
             <div className="content">
                 <h2 className='content-heading'>{props.heading}</h2>

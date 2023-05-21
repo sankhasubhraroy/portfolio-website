@@ -7,6 +7,7 @@ import Intro from './components/Intro/Intro';
 import Home from './pages/Home/Home';
 import MenuItem from './components/MenuItem/MenuItem';
 import ProjectCard from './components/ProjectCard/ProjectCard';
+import Project from './pages/Projects/Project';
 
 function App() {
   return (
@@ -18,11 +19,7 @@ function App() {
       {/* <Intro /> */}
       {/* <Home /> */}
       {/* <Menu /> */}
-      <ProjectCard
-        heading='ParkNow'
-        body='ParkNow is a web-based application designed to streamline and automate the process of managing vehicle parking by just one click. It provides a convenient and efficient solution for users, ensuring a smooth parking experience for all.'
-        isVisit={true}
-      />
+      <Project />
     </>
   );
 }

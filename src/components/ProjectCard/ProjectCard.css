@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 
-.card {
+.project-card {
     position: relative;
     width: 320px;
     height: 440px;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.card span {
+.project-card span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
         -5px -5px 5px #ebf0f8;
 }
 
-.card span::after {
+.project-card span::after {
     content: '';
     position: absolute;
     height: 99%;
