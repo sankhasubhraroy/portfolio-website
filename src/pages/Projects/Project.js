@@ -1,15 +1,15 @@
 import React from 'react'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
-import ProjectInfo from '../../components/ProjectInfo/ProjectInfo'
 import './Project.css'
 
 export default function Project() {
     return (
         <main>
-            <section className="projects">
-                <ProjectInfo
-                    projectImg={<img src="https://i.ibb.co/dMddB29/Park-Now-Preview.jpg" alt="Park-Now-Preview" border="0"></img>}
-                    projectTech={['CSS', 'HTML', 'JavaScript', 'Node.js', 'Express.js', 'MySQL', 'JSON Web Token (JWT)', 'Nodemailer', 'Razorpay API']}
+            <section className="project">
+                <ProjectCard
+                    heading='ParkNow'
+                    body='ParkNow is a web-based application designed to streamline and automate the process of managing vehicle parking by just one click. It provides a convenient and efficient solution for users, ensuring a smooth parking experience for all.'
+                    isVisit={true}
                 />
             </section>
         </main>

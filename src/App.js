@@ -12,13 +12,13 @@ import Project from './pages/Projects/Project';
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       {/* <Home /> */}
-      {/* <Menu /> */}
+      <Menu />
       <Project />
     </>
   );
