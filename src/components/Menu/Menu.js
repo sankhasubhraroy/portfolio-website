@@ -27,12 +27,12 @@ export default function Menu() {
                 titleColor='#6050DC'
             />
 
-            <MenuItem
+            {/* <MenuItem
                 svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z" fill='#FF033E' /></svg>}
 
                 linkTitle='Services'
                 titleColor='#FF033E'
-            />
+            /> */}
 
             <MenuItem
                 svg={<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 656q33 0 56.5-23.5T560 576q0-33-23.5-56.5T480 496q-33 0-56.5 23.5T400 576q0 33 23.5 56.5T480 656ZM320 816h320v-23q0-24-13-44t-36-30q-26-11-53.5-17t-57.5-6q-30 0-57.5 6T369 719q-23 10-36 30t-13 44v23Zm420 160H220q-24 0-42-18t-18-42V236q0-24 18-42t42-18h341l239 239v501q0 24-18 42t-42 18Z" fill='#333' /></svg>}

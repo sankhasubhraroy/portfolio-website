@@ -8,18 +8,23 @@ import Home from './pages/Home/Home';
 import MenuItem from './components/MenuItem/MenuItem';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Project from './pages/Projects/Project';
+import ContactPhoto from './components/ContactPhoto/ContactPhoto';
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       {/* <Home /> */}
-      <Menu />
-      <Project />
+      {/* <Menu /> */}
+      {/* <Project /> */}
+      <ContactPhoto
+        projectImg={61847}
+        projectTech={['4', '14']}
+      />
     </>
   );
 }
