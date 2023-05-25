@@ -9,6 +9,7 @@ import MenuItem from './components/MenuItem/MenuItem';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Project from './pages/Projects/Project';
 import ContactPhoto from './components/ContactPhoto/ContactPhoto';
+import SkillBox from './components/SkillBox/SkillBox';
 
 function App() {
   return (
@@ -21,10 +22,8 @@ function App() {
       {/* <Home /> */}
       {/* <Menu /> */}
       {/* <Project /> */}
-      <ContactPhoto
-        projectImg={61847}
-        projectTech={['4', '14']}
-      />
+      {/* <ContactPhoto/> */}
+      <SkillBox />
     </>
   );
 }
