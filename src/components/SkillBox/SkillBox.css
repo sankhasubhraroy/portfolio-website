@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
 
+.skill-box:hover {
+    animation: rotate 0.3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .skill-box .hexagon {
     position: relative;
-    width: 150px;
-    height: 96.75px;
-    z-index: -1;
+    width: 100px;
+    height: 69.5px;
     border-radius: 15px;
-    box-shadow: 10px 10px 20px #c5cad0,
-        -10px -10px 20px #fbffff;
 }
 
 .skill-box .hexagon::after,
@@ -17,16 +32,22 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    box-shadow: 10px 10px 20px #c5cad0,
-        -10px -10px 20px #fbffff;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
 }
 
 .skill-box .hexagon::after {
-    transform: rotate(60deg);
+    transform: rotate(0deg);
 }
 
 .skill-box .hexagon::before {
-    transform: rotate(120deg);
+    transform: rotate(60deg);
 }
 
 .skill-box .hexagon .skill-icon {
@@ -59,9 +80,9 @@
 
 .skill-icon svg {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 0;
+    width: 44px;
+    height: 44px;
+    top: 5px;
     left: 50%;
     transform: translate(-50%);
 
@@ -69,10 +90,11 @@
 
 .skill-icon p {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%);
     margin: 0;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 22px;
+    font-size: 12px;
+    text-align: center;
 }

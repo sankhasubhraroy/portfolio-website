@@ -8,22 +8,24 @@ import Home from './pages/Home/Home';
 import MenuItem from './components/MenuItem/MenuItem';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Project from './pages/Projects/Project';
-import ContactPhoto from './components/ContactPhoto/ContactPhoto';
+import ContactPhoto from './components/Photo/Photo';
 import SkillBox from './components/SkillBox/SkillBox';
+import About from './pages/About/About';
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       {/* <Home /> */}
-      {/* <Menu /> */}
+      <Menu />
       {/* <Project /> */}
       {/* <ContactPhoto/> */}
-      <SkillBox />
+      {/* <SkillBox /> */}
+      <About />
     </>
   );
 }

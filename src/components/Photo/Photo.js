@@ -1,7 +1,7 @@
 import React from 'react'
-import './ContactPhoto.css'
+import './Photo.css'
 
-export default function ContactPhoto() {
+export default function Photo() {
     return (
         <div className="contact-photo">
             <span></span>

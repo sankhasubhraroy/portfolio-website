@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.about-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.left-part {
+    text-align: right;
+}
+
+.skills {
+    max-width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em auto 7em;
+}
+
+.skill-box {
+    margin: 2em 1em;
+}
+
+@media screen and (max-width:1150px) {
+    .about-head {
+        flex-direction: column;
+    }
+
+    .right-part,
+    .left-part {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:537px) {
+    .skill-box {
+        margin: 2em 0.5em;
+    }
+}
+
+@media screen and (max-width:373px) {
+    .contact-photo {
+        width: 220px;
+        height: 220px;
+    }
+}
