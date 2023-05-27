@@ -1,18 +1,37 @@
 .project {
+    margin: 3em 0 7em;
+}
+
+.partition {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 7em;
+    gap: 30px;
 }
 
-.project-card {
-    margin: 3em;
+.partition:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-@media screen and (max-width:426px) {
-    .project-card {
-        margin: 1em;
+@media screen and (max-width:1023px) {
+
+    .partition,
+    .partition:nth-child(even) {
+        flex-direction: column-reverse;
+        margin: 5em 0;
+        gap: 20px;
+    }
+
+    .partition::after {
+        content: "";
+        width: 260px;
+        height: 3px;
+        position: absolute;
+        bottom: -40px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px #c5cad0,
+            -2px -2px 5px #fbffff;
     }
 }
 

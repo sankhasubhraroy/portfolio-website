@@ -14,24 +14,26 @@ import About from './pages/About/About';
 import ContactCard from './components/ContactCard/ContactCard';
 import Contact from './pages/Contact/Contact';
 import Switch from './components/Switch/Switch';
+import ProjectSlide from './components/ProjectSlide/ProjectSlide';
 
 function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <Switch />
+      {/* <Switch /> */}
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       {/* <Home /> */}
       {/* <Menu /> */}
-      {/* <Project /> */}
+      <Project />
       {/* <ContactPhoto/> */}
       {/* <SkillBox /> */}
       {/* <About /> */}
       {/* <ContactCard /> */}
       {/* <Contact /> */}
+      {/* <ProjectSlide /> */}
     </>
   );
 }
