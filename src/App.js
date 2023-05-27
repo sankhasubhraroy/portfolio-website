@@ -12,11 +12,14 @@ import ContactPhoto from './components/Photo/Photo';
 import SkillBox from './components/SkillBox/SkillBox';
 import About from './pages/About/About';
 import ContactCard from './components/ContactCard/ContactCard';
+import Contact from './pages/Contact/Contact';
+import Switch from './components/Switch/Switch';
 
 function App() {
   return (
     <>
       {/* <Navbar /> */}
+      <Switch />
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
@@ -27,7 +30,8 @@ function App() {
       {/* <ContactPhoto/> */}
       {/* <SkillBox /> */}
       {/* <About /> */}
-      <ContactCard />
+      {/* <ContactCard /> */}
+      {/* <Contact /> */}
     </>
   );
 }

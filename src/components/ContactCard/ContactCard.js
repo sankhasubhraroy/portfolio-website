@@ -7,7 +7,7 @@ export default function ContactCard() {
         <div className="contact-card">
             <div className='cardHeader'>
                 <div className="avatar">
-                    <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                    <img src="https://i.ibb.co/xhjSXHf/contact-square.jpg" alt='avatar'></img>
                 </div>
             </div>
 

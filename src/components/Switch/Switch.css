@@ -1,0 +1,78 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 4px #bec3c9,
+        -3px -3px 4px #ffffff;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 4px #bec3c9,
+        inset -3px -3px 4px #ffffff;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 9px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e0e5ec;
+    box-shadow: 2px 2px 3px #bec3c9,
+        -2px -2px 3px #bec3c9;
+    transition: .5s;
+}
+
+.off {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+
+.on {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+
+.on svg,
+.off svg {
+    width: 100%;
+    height: 100%;
+}
+
+input:checked+.slider:before {
+    transform: translateX(33px);
+}
