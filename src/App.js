@@ -11,21 +11,23 @@ import Project from './pages/Projects/Project';
 import ContactPhoto from './components/Photo/Photo';
 import SkillBox from './components/SkillBox/SkillBox';
 import About from './pages/About/About';
+import ContactCard from './components/ContactCard/ContactCard';
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <MenuItem /> */}
       {/* <PhotoFrame /> */}
       {/* <SocialTab /> */}
       {/* <Intro /> */}
       {/* <Home /> */}
-      <Menu />
+      {/* <Menu /> */}
       {/* <Project /> */}
       {/* <ContactPhoto/> */}
       {/* <SkillBox /> */}
-      <About />
+      {/* <About /> */}
+      <ContactCard />
     </>
   );
 }
