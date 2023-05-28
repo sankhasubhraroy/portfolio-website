@@ -5,7 +5,6 @@ import './ProjectSlide.css'
 export default function ProjectSlide(props) {
 
     let [count, setCount] = useState(0);
-    console.log(props.slideLinks)
 
     useEffect(() => {
         const intervalId = setInterval(() => {

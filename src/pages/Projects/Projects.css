@@ -1,5 +1,5 @@
-.project {
-    margin: 3em 0 7em;
+.Projects {
+    margin: 0 0 7em;
 }
 
 .partition {
@@ -19,7 +19,7 @@
     .partition,
     .partition:nth-child(even) {
         flex-direction: column-reverse;
-        margin: 5em 0;
+        margin: 3em 0 5em;
         gap: 20px;
     }
 
@@ -32,27 +32,5 @@
         border-radius: 50%;
         box-shadow: 2px 2px 5px #c5cad0,
             -2px -2px 5px #fbffff;
-    }
-}
-
-@media screen and (max-width:373px) {
-    .project-card {
-        width: 280px;
-        height: 385px;
-    }
-
-    .project-card .content .content-heading {
-        font-size: 24px;
-        margin: 10px 40px;
-    }
-
-    .project-card .content .content-body {
-        font-size: 14px;
-        margin: 10px 40px;
-    }
-
-    .project-card .content .content-links .visit-link,
-    .project-card .content .content-links .github-link {
-        margin: 0 5px;
     }
 }

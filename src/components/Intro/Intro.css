@@ -5,6 +5,10 @@
     font-family: 'Ubuntu Mono', monospace;
 }
 
+.intro .alt {
+    display: none;
+}
+
 .intro .hello {
     color: #333;
     font-size: 22px;
@@ -66,5 +70,17 @@
 
     .intro h1 {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .intro .hello,
+    .intro h1 {
+        display: none;
+    }
+
+    .intro .alt {
+        display: block;
     }
 }

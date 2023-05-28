@@ -6,16 +6,14 @@ import './Home.css'
 
 export default function Home() {
     return (
-        <main>
-            <section className='hero'>
-                <div className="left">
-                    <PhotoFrame />
-                    <SocialTab></SocialTab>
-                </div>
-                <div className="right">
-                    <Intro />
-                </div>
-            </section>
-        </main>
+        <section className='Home'>
+            <div className="left">
+                <PhotoFrame />
+                <SocialTab></SocialTab>
+            </div>
+            <div className="right">
+                <Intro />
+            </div>
+        </section>
     )
 }

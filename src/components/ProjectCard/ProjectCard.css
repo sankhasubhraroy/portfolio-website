@@ -91,3 +91,25 @@
     box-shadow: 5px 5px 5px #d5dae0,
         -5px -5px 5px #ebf0f8;
 }
+
+@media screen and (max-width:373px) {
+    .project-card {
+        width: 280px;
+        height: 385px;
+    }
+
+    .project-card .content .content-heading {
+        font-size: 24px;
+        margin: 10px 40px;
+    }
+
+    .project-card .content .content-body {
+        font-size: 14px;
+        margin: 10px 40px;
+    }
+
+    .project-card .content .content-links .visit-link,
+    .project-card .content .content-links .github-link {
+        margin: 0 5px;
+    }
+}
