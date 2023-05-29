@@ -1,5 +1,5 @@
 .menu {
-    background-color: #e0e5ec;
+    background-color: var(--background-color);
     height: 60px;
     position: fixed;
     bottom: 2em;
@@ -10,15 +10,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 99em;
+    border: 1px solid var(--border-color);
     z-index: 5;
-    box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+    box-shadow: 5px 5px 7px var(--dark-regular-shadow),
+        -5px -5px 7px var(--light-regular-shadow);
 }
 
 @media screen and (max-width:567px) {

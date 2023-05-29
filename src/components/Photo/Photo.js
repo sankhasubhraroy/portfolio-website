@@ -7,7 +7,6 @@ export default function Photo() {
             <span></span>
             <span></span>
             <span></span>
-            <div className="img"></div>
         </div>
     )
 }

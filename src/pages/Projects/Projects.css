@@ -25,12 +25,13 @@
 
     .partition::after {
         content: "";
-        width: 260px;
-        height: 3px;
+        width: 280px;
+        height: 5px;
         position: absolute;
         bottom: -40px;
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px #c5cad0,
-            -2px -2px 5px #fbffff;
+        border-radius: 15px;
+        border: 1px solid var(--border-color);
+        box-shadow: inset 2px 2px 3px var(--dark-regular-shadow),
+            inset -2px -2px 3px var(--light-regular-shadow);
     }
 }

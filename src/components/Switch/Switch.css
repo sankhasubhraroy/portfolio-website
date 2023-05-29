@@ -20,8 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 3px 3px 4px #bec3c9,
-        -3px -3px 4px #ffffff;
+    box-shadow: 3px 3px 5px var(--dark-regular-shadow),
+        -3px -3px 5px var(--light-regular-shadow);
 }
 
 .slider::after {
@@ -30,8 +30,8 @@
     width: 93%;
     height: 90%;
     border-radius: 20px;
-    box-shadow: inset 3px 3px 4px #bec3c9,
-        inset -3px -3px 4px #ffffff;
+    box-shadow: inset 3px 3px 5px var(--dark-regular-shadow),
+        inset -3px -3px 5px var(--light-regular-shadow);
 }
 
 .slider::before {
@@ -43,10 +43,10 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #e0e5ec;
-    box-shadow: 2px 2px 3px #bec3c9,
-        -2px -2px 3px #bec3c9;
-    transition: .5s;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 3px var(--dark-regular-shadow),
+        -2px -2px 3px var(--dark-regular-shadow);
+    transition: transform .5s;
 }
 
 .off {

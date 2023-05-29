@@ -1,24 +1,19 @@
 .contact-card {
     position: relative;
     max-width: 320px;
+    margin: 2em auto 5em;
     border-radius: 15px;
-    margin: 3em auto 7em;
-    box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+    border: 1px solid var(--border-color);
+    box-shadow: 5px 5px 7px var(--dark-regular-shadow),
+        -5px -5px 7px var(--light-regular-shadow);
 }
 
 .contact-card .cardHeader {
     position: relative;
     width: 100%;
     height: 60px;
-    border-radius: 15px;
-    background-color: #e0e5ec;
+    border-radius: 15px 15px 0 15px;
+    background-color: var(--background-color);
 }
 
 .contact-card .cardHeader::after {
@@ -30,15 +25,8 @@
     right: 0;
     border-radius: 15px;
     z-index: -1;
-    box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001;
+    box-shadow: 5px 5px 7px var(--dark-regular-shadow),
+        -5px -5px 7px var(--light-regular-shadow);
     transform: skewY(8deg);
     transform-origin: 0 100%;
 }
@@ -52,8 +40,8 @@
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid #e0e5ec;
-    box-shadow: 0 5px 5px #0002;
+    border: 5px solid var(--border-color);
+    box-shadow: 0 5px 5px var(--dark-regular-shadow);
 }
 
 .contact-card .cardHeader .avatar img {
@@ -69,21 +57,20 @@
     position: relative;
     margin: 100px 0 0;
     text-align: center;
+    color: var(--text-color);
 }
 
 .contact-card .location {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    color: var(--text-color);
 }
 
 .contact-card .location svg {
     width: 12px;
     height: 12px;
-}
-
-.contact-card .location p {
-    font-size: 12px;
 }
 
 .contact-card .description {
@@ -92,33 +79,23 @@
     margin: 10px auto;
     padding: 5px;
     text-align: center;
+    font-size: 12px;
     color: #777;
     border-radius: 15px;
-    box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001;
-}
-
-.contact-card .description p {
-    font-size: 12px;
+    box-shadow: 3px 3px 5px var(--dark-regular-shadow),
+        -3px -3px 5px var(--light-regular-shadow);
 }
 
 .contact-card .description p::after {
     content: "";
     position: absolute;
-    filter: drop-shadow(-5px -5px 5px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(-3px -3px 3px var(--light-regular-shadow));
     top: -2.6em;
     left: 50%;
     transform: translate(-50%);
     border-width: 1rem;
     border-style: solid;
-    border-color: transparent transparent #e0e5ec transparent;
+    border-color: transparent transparent var(--background-color) transparent;
 }
 
 .contact-card .buttons {
@@ -136,26 +113,17 @@
     padding: 7px;
     margin: 0 1em;
     border-radius: 15px;
-    font-family: 'Ubuntu Mono', Monospace;
+    border: 1px solid var(--border-color);
     font-weight: bold;
+    font-size: 14px;
     color: #6573d0;
-    box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001;
+    box-shadow: 4px 4px 6px var(--dark-regular-shadow),
+        -4px -4px 6px var(--light-regular-shadow);
 }
 
-/* .contact-card .buttons a:hover, */
 .contact-card .buttons a:active {
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-        -4px -4px 6px 0 rgba(116, 125, 136, .2),
-        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    box-shadow: inset 4px 4px 6px var(--dark-regular-shadow),
+        inset -4px -4px 6px var(--light-regular-shadow);
 }
 
 .contact-card .contactFooter .social-tab {

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
-
 .intro {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .intro .alt {
@@ -10,14 +7,13 @@
 }
 
 .intro .hello {
-    color: #333;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .intro h1 {
     color: #6050DC;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 700;
 }
 
@@ -25,14 +21,13 @@
     margin: 0;
     height: 60px;
     color: #4CBB17;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .intro .description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333;
 }
 
 .intro .description span {
@@ -40,26 +35,30 @@
 }
 
 .attachment {
-    width: calc(2 * 90px + 1em);
+    width: calc(2 * 120px + 2em);
     margin: 2em 0;
     display: flex;
     justify-content: space-between;
 }
 
 .attachment a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #fd5c63;
     padding: 11px 13px;
     border-radius: 7px;
-    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
-    transition: box-shadow 0.6s cubic-bezier(.79, .21, .06, .81);
+    border: 1px solid var(--border-color);
+    box-shadow: -4px -4px 6px var(--light-regular-shadow),
+        4px 4px 6px var(--dark-regular-shadow);
 }
 
 .attachment a:hover {
-    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+    box-shadow: inset -4px -4px 6px var(--light-regular-shadow),
+        inset 4px 4px 6px var(--dark-regular-shadow);
 }
 
 @media screen and (max-width:1023px) {
@@ -82,5 +81,27 @@
 
     .intro .alt {
         display: block;
+    }
+}
+
+@media screen and (max-width:373px) {
+    .intro .attachment {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .intro .attachment a {
+        font-size: 12px;
+    }
+
+    .intro .attachment a svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .intro .attachment a {
+        padding: 5px;
     }
 }

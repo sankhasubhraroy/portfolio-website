@@ -19,17 +19,18 @@
     content: "";
     display: block;
     border-radius: 99em;
+    border: 1px solid var(--border-color);
     width: 100%;
     height: 100%;
     top: 0;
     transform: translateX(200%);
     transition: transform 0.2s ease-in;
     transform-origin: center right;
-    background-color: #e0e5ec;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-        -4px -4px 6px 0 rgba(116, 125, 136, .2),
-        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    background-color: var(--background-color);
+    box-shadow: 4px 4px 6px 0 var(--light-regular-shadow),
+        -4px -4px 6px 0 var(--dark-regular-shadow),
+        inset -4px -4px 6px 0 var(--light-regular-shadow),
+        inset 4px 4px 6px 0 var(--dark-regular-shadow);
 }
 
 .link:hover,

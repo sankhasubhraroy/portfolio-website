@@ -1,13 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
-
 .ability {
+    position: relative;
     max-width: 320px;
     padding: 10px;
     margin: 30px;
     border-radius: 15px;
-    box-shadow: 5px 5px 9px #d3d7de,
-        -5px -5px 9px #edf3fa;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 7px var(--dark-regular-shadow),
+        -5px -5px 7px var(--light-regular-shadow);
+}
+
+.ability::after {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 95%;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: inset 5px 5px 7px var(--dark-regular-shadow),
+        inset -5px -5px 7px var(--light-regular-shadow);
 }
 
 .ability h3 {
@@ -18,5 +31,5 @@
 .ability p {
     margin: 5px;
     font-size: 12px;
-    color: #555;
+    color: var(--text-color-secondary);
 }

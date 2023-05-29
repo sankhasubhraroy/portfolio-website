@@ -3,14 +3,15 @@
     height: 320px;
     position: relative;
     border-radius: 15px;
+    border: 1px solid var(--border-color);
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    box-shadow: 5px 5px 10px #c5cad0,
-        -5px -5px 10px #fbffff;
+    box-shadow: 5px 5px 7px var(--dark-regular-shadow),
+        -5px -5px 7px var(--light-regular-shadow);
 }
 
 .project-slide::after {
@@ -19,8 +20,9 @@
     width: 80%;
     height: 90%;
     border-radius: 5px;
-    box-shadow: inset 2px 2px 5px #c5cad0,
-        inset -2px -2px 5px #c5cad0;
+    border: 3px solid var(--border-color);
+    /* box-shadow: inset 2px 2px 5px var(--dark-soft-shadow),
+        inset -2px -2px 5px var(--dark-soft-shadow); */
 }
 
 .btn1,
@@ -33,15 +35,15 @@
     position: absolute;
     right: 15px;
     cursor: pointer;
-    box-shadow: inset 1px 1px 3px #c5cad0,
-        inset -1px -1px 3px #fbffff;
+    box-shadow: inset 3px 3px 3px var(--dark-soft-shadow),
+        inset -3px -3px 3px var(--light-soft-shadow);
 }
 
 .btn1:active,
 .btn2:active,
 .btn3:active {
-    box-shadow: inset 3px 3px 3px #c5cad0,
-        inset -3px -3px 3px #fbffff;
+    box-shadow: inset 3px 3px 3px var(--dark-regular-shadow),
+        inset -3px -3px 3px var(--light-regular-shadow);
 }
 
 .btn1 .svg,
