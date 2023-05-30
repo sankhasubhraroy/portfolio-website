@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar/Navbar';
 import Menu from './components/Menu/Menu'
@@ -8,17 +7,9 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 
 function App() {
-
-  const [theme, setTheme] = useState(true);
-
-  const toggleMode = () => {
-    setTheme(!theme)
-    document.documentElement.setAttribute("data-theme", theme ? "dark" : "light")
-  }
-
   return (
-    <div className="App" data-theme={theme ? "dark" : "light"} >
-      <Navbar value={theme} change={toggleMode} />
+    <div className="App">
+      <Navbar />
       <Menu />
       <Routes>
         <Route exact path="/" element={<Home />} />

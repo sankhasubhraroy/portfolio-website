@@ -28,11 +28,30 @@
   --dark-linear-gradient: #151515;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: inset -4px -4px 6px var(--light-regular-shadow),
+    inset 4px 4px 6px var(--dark-regular-shadow);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: inset -5px -5px 5px var(--dark-regular-shadow),
+    inset 5px 5px 5px var(--light-regular-shadow);
+}
+
 body {
   margin: 0;
   background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--text-color);
 }
