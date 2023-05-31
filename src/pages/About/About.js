@@ -1,13 +1,19 @@
 import React from 'react'
-import SkillBox from '../../components/SkillBox/SkillBox'
+import { motion } from 'framer-motion'
 import './About.css'
+import SkillBox from '../../components/SkillBox/SkillBox'
 import ContactPhoto from '../../components/Photo/Photo'
 import Experience from '../../components/Experience/Experience'
 import Heading from '../../components/Heading/Heading'
 
 export default function About() {
     return (
-        <section className='About'>
+        <motion.section
+            className='About'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <Heading
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill='currentColor' viewBox="0 0 512 512" xmlSpace="preserve"><path d="M505.837 180.418L279.265 76.124A55.219 55.219 0 00256 71.031a55.225 55.225 0 00-23.265 5.093L6.163 180.418C2.418 182.149 0 185.922 0 190.045s2.418 7.896 6.163 9.627l226.572 104.294A55.226 55.226 0 00256 309.067a55.242 55.242 0 0023.267-5.101l178.812-82.306v82.881c-7.096.8-12.63 6.84-12.63 14.138a14.185 14.185 0 0010.206 13.618l-12.092 79.791h55.676l-12.09-79.791a14.185 14.185 0 0010.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148l21.116-9.721c3.744-1.731 6.163-5.504 6.163-9.627s-2.42-7.896-6.165-9.627z" className="st0"></path><path d="M256 346.831c-11.246 0-22.143-2.391-32.386-7.104L112.793 288.71v101.638c0 22.314 67.426 50.621 143.207 50.621 75.782 0 143.209-28.308 143.209-50.621V288.71l-110.827 51.017c-10.237 4.713-21.132 7.104-32.382 7.104z" className="st0"></path></svg>}
 
@@ -142,6 +148,6 @@ export default function About() {
                     skillName='VS Code'
                 />
             </div>
-        </section>
+        </motion.section>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialTab from '../SocialTab/SocialTab'
 import './PhotoFrame.css'
 
 export default function PhotoFrame() {
