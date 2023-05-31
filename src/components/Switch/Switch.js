@@ -6,13 +6,16 @@ export default function Switch() {
     const setLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('currentMode', 'light');
+        favicon.setAttribute('href', 'favicon.ico');
     }
     const setDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('currentMode', 'dark');
+        favicon.setAttribute('href', 'favicon-dark.ico');
     }
 
     const currentMode = localStorage.getItem('currentMode');
+    const favicon = document.getElementById('favicon');
 
     if (currentMode === 'dark') {
         setDarkMode();

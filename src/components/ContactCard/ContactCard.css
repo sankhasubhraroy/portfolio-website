@@ -57,7 +57,6 @@
     position: relative;
     margin: 100px 0 0;
     text-align: center;
-    color: var(--text-color);
 }
 
 .contact-card .location {
@@ -65,7 +64,6 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    color: var(--text-color);
 }
 
 .contact-card .location svg {
@@ -80,7 +78,7 @@
     padding: 5px;
     text-align: center;
     font-size: 12px;
-    color: #777;
+    color: var(--text-color-secondary);
     border-radius: 15px;
     box-shadow: 3px 3px 5px var(--dark-regular-shadow),
         -3px -3px 5px var(--light-regular-shadow);
@@ -116,7 +114,7 @@
     border: 1px solid var(--border-color);
     font-weight: bold;
     font-size: 14px;
-    color: #6573d0;
+    color: #6050DC;
     box-shadow: 4px 4px 6px var(--dark-regular-shadow),
         -4px -4px 6px var(--light-regular-shadow);
 }

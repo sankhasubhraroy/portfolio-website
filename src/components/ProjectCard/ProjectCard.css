@@ -55,8 +55,8 @@
 
 .content .content-heading {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: var(--text-color);
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .content .content-body {
@@ -98,12 +98,12 @@
     }
 
     .project-card .content .content-heading {
-        font-size: 24px;
+        font-size: 18px;
         margin: 10px 40px;
     }
 
     .project-card .content .content-body {
-        font-size: 14px;
+        font-size: 12px;
         margin: 10px 40px;
     }
 
