@@ -2,12 +2,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 0;
+    gap: 3em;
+    margin: 1em 0;
 }
 
-.left-part .ability {
-    flex-direction: row-reverse;
-    text-align: right;
+.left-part {
+    .ability:nth-child(even) {
+        transform: rotate(-5deg);
+    }
+
+    .ability:nth-child(odd) {
+        transform: rotate(5deg);
+    }
+
+    .ability {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+}
+
+.right-part {
+    .ability:nth-child(even) {
+        transform: rotate(5deg);
+    }
+
+    .ability:nth-child(odd) {
+        transform: rotate(-5deg);
+    }
 }
 
 .skills {
@@ -26,6 +47,24 @@
 @media screen and (max-width:1150px) {
     .about-head {
         flex-direction: column;
+        gap: 0;
+
+        .contact-photo {
+            margin: 50px;
+            order: -1;
+        }
+
+        .right-part {
+            margin-top: -70px;
+        }
+
+        .ability:nth-child(even) {
+            transform: rotate(5deg);
+        }
+
+        .ability:nth-child(odd) {
+            transform: rotate(-5deg);
+        }
     }
 
     .left-part .ability {
