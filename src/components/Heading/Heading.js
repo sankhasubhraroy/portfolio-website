@@ -8,7 +8,7 @@ export default function Heading(props) {
             <div className="icon">
                 {props.svg}
             </div>
-            <h1>{props.text}</h1>
+            <h1 style={{ textTransform: "uppercase" }}>{props.text}</h1>
         </div>
     )
 }
