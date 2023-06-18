@@ -1,5 +1,6 @@
 import React from 'react'
 import './PhotoFrame.css'
+import myPhoto from '../../assets/portfolio-image.png'
 
 export default function PhotoFrame() {
     return (
@@ -8,7 +9,7 @@ export default function PhotoFrame() {
             <span></span>
             <span></span>
             <div className="photo">
-                <img src="https://i.ibb.co/KFJG5hG/portfolio.png" alt="portfolio" border="0"></img>
+                <img src={myPhoto} alt="portfolio" border="0"></img>
             </div>
         </div>
     )

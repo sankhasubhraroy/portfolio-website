@@ -1,13 +1,14 @@
 import React from 'react'
 import './ContactCard.css'
 import SocialTab from '../SocialTab/SocialTab'
+import contactPhoto from '../../assets/contact-photo.png'
 
 export default function ContactCard() {
     return (
         <div className="contact-card">
             <div className='cardHeader'>
                 <div className="avatar">
-                    <img src="https://i.ibb.co/xhjSXHf/contact-square.jpg" alt='avatar'></img>
+                    <img src={contactPhoto} alt='avatar'></img>
                 </div>
             </div>
 
