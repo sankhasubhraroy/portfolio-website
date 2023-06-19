@@ -55,7 +55,10 @@
 
 .btn1 {
     top: 20%;
-    transform: rotate(180deg);
+
+    & svg {
+        transform: rotate(180deg);
+    }
 }
 
 .btn2 {
@@ -65,7 +68,10 @@
 
 .btn3 {
     bottom: 20%;
-    transform: rotate(90deg);
+
+    & svg {
+        transform: rotate(90deg);
+    }
 }
 
 .project-slide img {

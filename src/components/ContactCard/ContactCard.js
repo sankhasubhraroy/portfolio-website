@@ -1,7 +1,8 @@
 import React from 'react'
 import './ContactCard.css'
 import SocialTab from '../SocialTab/SocialTab'
-import contactPhoto from '../../assets/contact-photo.png'
+import contactPhoto from '../../assets/contact-image.png'
+import LocationIcon from '../../icons/LocationIcon'
 
 export default function ContactCard() {
     return (
@@ -14,7 +15,7 @@ export default function ContactCard() {
 
             <h3>Sankhasubhra Roy</h3>
             <div className="location">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="feather feather-map-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <LocationIcon />
                 <p>Asansol, West Bengal, India</p>
             </div>
             <div className="description">
