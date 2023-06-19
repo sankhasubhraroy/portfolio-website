@@ -4,6 +4,7 @@ import './Intro.css'
 import { Link } from 'react-router-dom'
 import DownArrowIcon from '../../icons/DownArrowIcon';
 import RightArrowIcon from '../../icons/RightArrowIcon';
+import myResume from '../../assets/resume.pdf'
 
 export default function Intro(props) {
 
@@ -27,7 +28,7 @@ export default function Intro(props) {
             <p className='description'>I'm a passionate and dedicated full stack developer with a strong foundation in computer science. I have always been fascinated by the intricate world of software development. I have hands-on experience in several technologies, including <span>Java</span>, <span>Node.js</span>, <span>React</span>, <span>MySQL</span>, and <span>MongoDB</span>.</p>
             <p className='description'>As a full stack developer, I thrive in dynamic and challenging environments, and I am eager to contribute my skills to create innovative and robust applications. I am a firm believer in clean code, modular design, and continuous improvement.</p>
             <div className="attachment">
-                <a href="resume.pdf" target='_blank' rel="noreferrer">
+                <a href={myResume} target='_blank' rel="noreferrer">
                     <span>Resume</span>
                     <DownArrowIcon />
                 </a>
